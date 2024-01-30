@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 class Square():
     side = 0
 
@@ -14,7 +15,8 @@ class Square():
         return self.side * 4
 
     def __str__(self):
-        return "Square with side length {}".format(self.side)
+        return "Square side length: {}".format(self.side)
+
 
 if __name__ == "__main__":
     s = Square(side=12)
