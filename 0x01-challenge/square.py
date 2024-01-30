@@ -8,18 +8,17 @@ class square():
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
-        if self.width != self.height:
-            raise ValueError("Width and height must be equal for a square")
 
     def area_of_my_square(self):
         """ Area of the square """
         return self.width * self.width
 
     def PermiterOfMySquare(self):
-        return self.width * 4
+        return 4 * self.width
 
     def __str__(self):
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
